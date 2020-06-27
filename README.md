@@ -1,5 +1,5 @@
 # Introduction
-The Feed Interface is the command line method of uploading a set of feed results to SeeThru Networks for distrubtion to users.  
+The Feed Interface is the command line method of uploading a set of feed results to SeeThru Networks for distribution to users.  
 We handle the process of feed result distribution via our platform which allows you to focus on creating feeds.  
 
 ## Feeds
@@ -47,7 +47,7 @@ When the tool is used, you need to give it a configuration file. This configurat
 - A feed interface is identified by the configuration file, therefore you can use many feed interfaces with the same tool.  
 
 # The config file
-- The config file tells the tool where to find all of your feeds and any authentication arguments, every config file is unique to a seperate feed interface created on the SeeThru platform.  
+- The config file tells the tool where to find all of your feeds and any authentication arguments, every config file is unique to a separate feed interface created on the SeeThru platform.  
 - The file extension of the config file is `.conf`  
 - Every property in the config file **must** be surrounded by `"` in order for the property to be valid.  
 - The format for a property in the config file is as follows: `property_name="property_value"`.  
@@ -65,7 +65,7 @@ Every feed in the config file is represented by a block, each block must begin w
 - `guid` - **Required** - This is the feed guid given to you when you create a feed on the SeeThru platform, this feed **must** belong to the feed interface defined with the access_token.  
 - `name` - Optional - This names the feed in the config file for easy identification of a feed, this isn't used by the tool.  
 - `source` - **Required** - This tells the tool where to find the result for the feed, the format of this result is defined in the result section.  
-- `version` - **Required** - This deifnes the version of the feed, this will be sent to the SeeThru platform, the version identifier can be a **maximum** of 8 characters.  
+- `version` - **Required** - This defines the version of the feed, this will be sent to the SeeThru platform, the version identifier can be a **maximum** of 8 characters.  
   
 ### Example
 An example config is as follows:  
@@ -92,12 +92,12 @@ The feed result for the tool should be given as a json file, the source in the c
 
 The json file should contain three properties, `color`, `message` and `time`.  
 - The `color` property defines the overall result of a test, `green` means good, `red` means bad and `amber` is somewhere in between, you choose the conditions to make a color in your test.  
-- The `message` propety is an accompanying message with the color. An example of this would be that with a `red` color, the message would describe the exact error that occured in your test.  
+- The `message` property is an accompanying message with the color. An example of this would be that with a `red` color, the message would describe the exact error that occurred in your test.  
 - The `time` property defines the time at which the test was performed.  
 
 ### Formatting
-All propeties have string types.  
-The color propety can take the following values:  
+All properties have string types.  
+The color property can take the following values:  
 
 - `green`  
 - `amber`  
