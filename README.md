@@ -1,3 +1,6 @@
+# Notice
+The feed interface cli tool how now been replaced with the SeeThru https api endpoint, please use that instead
+
 # Introduction
 The Feed Interface is the command line method of uploading a set of feed results to SeeThru Networks for distribution to users.  
 We handle the process of feed result distribution via our platform which allows you to focus on creating feeds.  
